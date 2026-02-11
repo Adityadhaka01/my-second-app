@@ -1,3 +1,64 @@
-#ass{
-    color: darkolivegreen;
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 30px;
+}
+
+.trending {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-weight: 500;
+}
+
+.section-header a:hover {
+  color: white;
+}
+
+.song-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.song-row::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 180px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h4 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }

@@ -13,11 +13,11 @@ function Header() {
           className="logo"
         />
         <div className="aadi"> 
-         <CiSearch />
-        <input
+         <CiSearch  className="icon1"/>
+        <input 
           type="text"
-          placeholder="What do you want to play?"
-          className="search"
+          placeholder="What do you want to play?" className="input"
+          
         />
        </div>
       </div>

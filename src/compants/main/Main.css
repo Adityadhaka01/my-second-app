@@ -4,17 +4,19 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+.box{
+  display: flex;
+}
 body {
-  background-color: #121212;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
 .sidebar {
-  width: 350px;
-  background: #000;
+  width: 30%;
+  background: #1b1a1a;
   color: #fff;
   padding: 20px;
   border-radius: 12px;
@@ -98,11 +100,80 @@ body {
   border: 1px solid #b3b3b3;
   display: inline-block;
   padding: 8px 15px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
 }
 
 .language-btn:hover {
   border-color: #fff;
+}
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 30px;
+  
+}
+
+.trending {
+  max-width: 70%;
+margin-left: 10px;
+border-radius: 20px;
+background-color: #1b1a1a;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.section-header a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-weight: 500;
+}
+
+.section-header a:hover {
+  color: white;
+}
+
+.song-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.song-row::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 180px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h4 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
